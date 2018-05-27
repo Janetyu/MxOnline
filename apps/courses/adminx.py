@@ -11,7 +11,7 @@ class CourseAdmin(object):
     list_display = ['name','desc','detail','degree','learn_times','students','fav_nums','image','click_nums','add_time']
     search_fields = ['name','desc','detail','degree','learn_times','students','fav_nums','image','click_nums']
     list_filter = ['name','desc','detail','degree','learn_times','students','fav_nums','image','click_nums','add_time']
-    c = 1
+
 
 class LessonAdmin(object):
     list_display = ['course', 'name', 'add_time']
