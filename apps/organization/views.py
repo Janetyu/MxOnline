@@ -37,9 +37,9 @@ class OrgView(View):
         sort = request.GET.get("sort","")
         if sort:
             if sort == "students":
-                all_orgs.order_by(r"-students")#倒序排列 升序排序
+                all_orgs = all_orgs.order_by(r"-students")#倒序排列 升序排序
             elif sort == "courses":
-                all_orgs.order_by(r"-course_nums")
+                all_orgs = all_orgs.order_by(r"-course_nums")
 
         # 机构数量
         org_nums = all_orgs.count()
