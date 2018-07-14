@@ -15,13 +15,13 @@ class UserAskAdmin(object):
 
 class UserMessageAdmin(object):
     list_display = ['user', 'message', 'has_read','add_time']
-    search_fields = ['user', 'message','has_read']
+    search_fields = ['user.username', 'message','has_read']
     list_filter = ['user', 'message', 'has_read','add_time']
 
 
 class UserCourseAdmin(object):
     list_display = ['user', 'course', 'add_time']
-    search_fields = ['user', 'course']
+    search_fields = ['user.username', 'course']
     list_filter = ['user', 'course', 'add_time']
 
 

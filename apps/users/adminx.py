@@ -7,6 +7,7 @@ from xadmin import views
 
 from .models import EmailVerifyRecord
 from .models import Banner
+from .models import UserProfile
 
 
 class BaseSetting(object):
@@ -23,6 +24,12 @@ class GlobalSettings(object):
     menu_style = "accordion"
 
 
+# class UserProfileAdmin(object):
+    # list_display = ['username','email','first_name','last_name','is_staff']
+    # search_fields = ['username','email','first_name','last_name','is_staff']
+    # list_filter = ['username','email','first_name','last_name','is_staff']
+
+
 class EmailVerifyRecordAdmin(object):
     list_display = ['code','email','send_type','send_time']
     search_fields = ['code','email','send_type']
@@ -35,6 +42,7 @@ class BannerAdmin(object):
     list_filter = ['title','image','url','index','add_time']
 
 
+# xadmin.site.register(UserProfile,UserProfileAdmin)
 xadmin.site.register(EmailVerifyRecord,EmailVerifyRecordAdmin)
 xadmin.site.register(Banner,BannerAdmin)
 xadmin.site.register(views.BaseAdminView,BaseSetting)
