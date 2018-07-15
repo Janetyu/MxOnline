@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from django.views.generic.base import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
+from django.http import HttpResponse
 
 from .models import Course,CourseResource
-from operation.models import UserFavorite
+from operation.models import UserFavorite,CourseComments
 
 # Create your views here.
 class CourseListView(View):
@@ -86,3 +87,42 @@ class CourseInfoView(View):
             "course":course,
             "course_resources":all_resources,
         })
+
+
+class CourseCommentView(View):
+    """
+    课程评论页面
+    """
+    def get(self, request, course_id):
+        course = Course.objects.get(id=int(course_id))
+        all_resources = CourseResource.objects.filter(course=course)
+        all_comments = CourseComments.objects.filter(course=course)
+        return render(request, "course-comment.html", {
+            "course": course,
+            "course_resources": all_resources,
+            "all_comments": all_comments,
+        })
+
+
+class AddCommentsView(View):
+    """
+    用户添加课程评论
+    """
+    def post(self,request):
+        if not request.user.is_authenticated():
+            # 判断用户登录状态，如果用户还没登录返回json
+            return HttpResponse('{"status":"fail","msg":"用户未登录"}', content_type='application/json')
+
+        course_id = request.POST.get("course_id",0) #如果值为空，则默认值为0
+        comments = request.POST.get("comments","")
+        if int(course_id) > 0 and comments:
+            course_comments = CourseComments()
+            course = Course.objects.get(id=int(course_id))
+            #get方法只能取出一条数据，如果没有数据则会抛出异常，filter方法则会返回一个数组，若无值，则返回一个空数组，而不会抛异常
+            course_comments.course = course
+            course_comments.comments = comments
+            course_comments.user = request.user
+            course_comments.save()
+            return HttpResponse('{"status":"success","msg":"添加成功"}', content_type='application/json')
+        else:
+            return HttpResponse('{"status":"fail","msg":"添加失败"}', content_type='application/json')
