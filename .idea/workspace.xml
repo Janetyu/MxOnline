@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6c69ecc-1d9b-4a84-85bd-12573f75fd81" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/video-js.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/video.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/course-play.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/courses/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/courses/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/course-video.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course-video.html" afterDir="false" />
-    </list>
+    <list default="true" id="b6c69ecc-1d9b-4a84-85bd-12573f75fd81" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,8 +61,8 @@
       <file leaf-file-name="course-play.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/course-play.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-367">
-              <caret line="61" selection-start-line="61" selection-end-line="67" selection-end-column="14" />
+            <state relative-caret-position="146">
+              <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
               <folding>
                 <element signature="e#97#119#0#DjangoTemplate" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -726,7 +718,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531672536679</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="完成课程视频播放功能的编写">
+      <created>1531708923981</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1531708923981</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -740,14 +739,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="753" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32736155" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50075644" side_tool="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.4315961" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.3583062" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27850163" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27850163" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32736155" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61860466" visible="true" weight="0.21406959" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -823,7 +821,8 @@
     <MESSAGE value="完成课程评论页面的编写" />
     <MESSAGE value="完成学过该课程的同学还学过哪些课程的模块的编写以及编写了验证是否登录的基础View，并把用户和课程关联起来" />
     <MESSAGE value="添加CourseCommentView的该课同学还学过的逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加CourseCommentView的该课同学还学过的逻辑" />
+    <MESSAGE value="完成课程视频播放功能的编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成课程视频播放功能的编写" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1214,8 +1213,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/course-play.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-367">
-          <caret line="61" selection-start-line="61" selection-end-line="67" selection-end-column="14" />
+        <state relative-caret-position="146">
+          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
           <folding>
             <element signature="e#97#119#0#DjangoTemplate" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
