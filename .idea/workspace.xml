@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6c69ecc-1d9b-4a84-85bd-12573f75fd81" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/utils/mixin_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/video-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/video.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/course-play.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/courses/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/courses/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/course-video.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course-video.html" afterDir="false" />
     </list>
@@ -39,11 +42,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="course-comment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/course-comment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="31" column="77" lean-forward="true" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="81" />
+              <folding>
+                <element signature="e#95#117#0#DjangoTemplate" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+            <state relative-caret-position="151">
+              <caret line="171" selection-start-line="171" selection-end-line="201" selection-end-column="10" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -51,13 +66,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mixin_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/utils/mixin_utils.py">
+      <file leaf-file-name="course-play.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/course-play.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="-367">
+              <caret line="61" selection-start-line="61" selection-end-line="67" selection-end-column="14" />
               <folding>
-                <element signature="e#23#80#0" expanded="true" />
+                <element signature="e#97#119#0#DjangoTemplate" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/courses/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="81" />
+              <folding>
+                <element signature="e#73#113#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,24 +94,10 @@
       <file leaf-file-name="course-video.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/course-video.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1024">
-              <caret line="181" column="10" lean-forward="true" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="10" />
+            <state relative-caret-position="127">
+              <caret line="97" selection-start-line="97" selection-end-line="105" selection-end-column="29" />
               <folding>
-                <element signature="n#block#1;n#!!top" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" />
-                <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#97#119#0#DjangoTemplate" />
               </folding>
             </state>
           </provider>
@@ -95,8 +109,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -146,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/apps/users/models.py" />
         <option value="$PROJECT_DIR$/apps/organization/adminx.py" />
         <option value="$USER_HOME$/Envs/mxonline/Lib/site-packages/xadmin/plugins/themes.py" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/themes/cerulean_theme.css" />
@@ -192,10 +205,11 @@
         <option value="$PROJECT_DIR$/templates/org_base.html" />
         <option value="$PROJECT_DIR$/apps/courses/models.py" />
         <option value="$PROJECT_DIR$/templates/course-detail.html" />
+        <option value="$PROJECT_DIR$/apps/utils/mixin_utils.py" />
         <option value="$PROJECT_DIR$/apps/courses/urls.py" />
         <option value="$PROJECT_DIR$/templates/course-comment.html" />
+        <option value="$PROJECT_DIR$/templates/course-play.html" />
         <option value="$PROJECT_DIR$/templates/course-video.html" />
-        <option value="$PROJECT_DIR$/apps/utils/mixin_utils.py" />
         <option value="$PROJECT_DIR$/apps/courses/views.py" />
       </list>
     </option>
@@ -278,6 +292,12 @@
             <path>
               <item name="MxOnline" type="b2602c69:ProjectViewProjectNode" />
               <item name="MxOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MxOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MxOnline" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -298,13 +318,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PycharmProjects\Django\MxOnline\apps" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\Django\MxOnline\static\css" />
+      <recent name="D:\PycharmProjects\Django\MxOnline\static\js" />
       <recent name="D:\PycharmProjects\Django\MxOnline\templates" />
       <recent name="D:\PycharmProjects\Django\MxOnline\static" />
       <recent name="D:\PycharmProjects\Django\MxOnline\extra_apps" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\Django\MxOnline\apps" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -690,7 +712,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531665270402</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="完成学过该课程的同学还学过哪些课程的模块的编写以及编写了验证是否登录的基础View，并把用户和课程关联起来">
+      <created>1531672153716</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1531672153716</updated>
+    </task>
+    <task id="LOCAL-00023" summary="添加CourseCommentView的该课同学还学过的逻辑">
+      <created>1531672536678</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1531672536679</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -711,9 +747,9 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.4315961" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.3583062" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27850163" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27850163" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32736155" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61860466" visible="true" weight="0.21104388" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61860466" visible="true" weight="0.21406959" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
@@ -785,7 +821,9 @@
     <MESSAGE value="完成课程详情页面的编写" />
     <MESSAGE value="完成课程章节页面的编写" />
     <MESSAGE value="完成课程评论页面的编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成课程评论页面的编写" />
+    <MESSAGE value="完成学过该课程的同学还学过哪些课程的模块的编写以及编写了验证是否登录的基础View，并把用户和课程关联起来" />
+    <MESSAGE value="添加CourseCommentView的该课同学还学过的逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加CourseCommentView的该课同学还学过的逻辑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -800,27 +838,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/utils/email_send.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/password_reset.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forgetpwd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -1129,48 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/courses/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="74" />
-          <folding>
-            <element signature="e#73#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/course-comment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="101" column="110" selection-start-line="101" selection-start-column="110" selection-end-line="101" selection-end-column="110" />
-          <folding>
-            <element signature="n#block#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/course-video.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="181" column="10" lean-forward="true" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="10" />
-          <folding>
-            <element signature="n#block#1;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" />
-            <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/utils/mixin_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1181,12 +1156,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/video.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/video-js.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/courses/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="81" />
+          <folding>
+            <element signature="e#73#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/course-comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="31" column="77" lean-forward="true" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="81" />
+          <folding>
+            <element signature="e#95#117#0#DjangoTemplate" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+        <state relative-caret-position="151">
+          <caret line="171" selection-start-line="171" selection-end-line="201" selection-end-column="10" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/course-video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="97" selection-start-line="97" selection-end-line="105" selection-end-column="29" />
+          <folding>
+            <element signature="e#97#119#0#DjangoTemplate" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/course-play.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-367">
+          <caret line="61" selection-start-line="61" selection-end-line="67" selection-end-column="14" />
+          <folding>
+            <element signature="e#97#119#0#DjangoTemplate" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
