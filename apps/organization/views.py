@@ -192,3 +192,38 @@ class AddFavView(View):
                 return HttpResponse('{"status":"success","msg":"已收藏"}', content_type='application/json')
             else:
                 return HttpResponse('{"status":"fail","msg":"收藏出错"}', content_type='application/json')
+
+
+class TeacherListView(View):
+    """
+    讲师列表页
+    """
+    def get(self,request):
+        all_teachers = Teacher.objects.all()
+
+        # 排序
+        sort = request.GET.get("sort", "")
+        if sort:
+            if sort == "hot":
+                all_teachers = all_teachers.order_by(r"-click_nums")  # 倒序排列 升序排序
+
+        # 讲师排行榜
+        sorted_teacher = Teacher.objects.all().order_by(r"-click_nums")[:3]
+
+        # 对讲师进行分页处理
+        try:
+            page = request.GET.get('page', 1)
+        except PageNotAnInteger:
+            page = 1
+
+        # 列表，每页显示数量,request
+        # 因为教师比较少，暂时用每页一个教师
+        p = Paginator(all_teachers, 1, request=request)
+
+        teachers = p.page(page)
+
+        return render(request,"teachers-list.html",{
+            "all_teachers":teachers,
+            "sorted_teacher":sorted_teacher,
+            "sort":sort,
+        })
