@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6c69ecc-1d9b-4a84-85bd-12573f75fd81" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/organization/migrations/0005_teacher_age.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/teachers-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/teacher-detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/organization/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/organization/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/organization/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/organization/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/organization/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/organization/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/org-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/org-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teachers-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teachers-list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,31 +40,12 @@
     <favorites_list name="MxOnline" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="teachers-list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/teachers-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="22" column="21" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="22" selection-end-column="21" />
-              <folding>
-                <element signature="e#671#677#0#HTML" expanded="true" />
-                <element signature="e#677#683#0#HTML" expanded="true" />
-                <element signature="e#683#689#0#HTML" expanded="true" />
-                <element signature="e#1872#1878#0#HTML" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#section#1;n#!!top" />
-                <element signature="n#for#2;n#!!top" />
-                <element signature="n#script#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="54" column="61" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="61" />
+            <state relative-caret-position="209">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -73,8 +53,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="76" />
+            <state relative-caret-position="243">
+              <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
               <folding>
                 <element signature="e#73#113#0" expanded="true" />
               </folding>
@@ -85,8 +65,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="224" selection-start-line="224" selection-end-line="228" selection-end-column="10" />
+            <state relative-caret-position="3667">
+              <caret line="244" column="40" selection-start-line="244" selection-start-column="40" selection-end-line="244" selection-end-column="40" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -133,6 +113,8 @@
       <find>js-pl-submit</find>
       <find>bu</find>
       <find>讲师排行榜</find>
+      <find>全部课程</find>
+      <find>收藏</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/images</replace>
@@ -153,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Envs/mxonline/Lib/site-packages/xadmin/plugins/themes.py" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/themes/cerulean_theme.css" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/themes/cosmo-theme.css" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/themes/cyborg.css" />
@@ -188,7 +169,6 @@
         <option value="$PROJECT_DIR$/templates/course-list.html" />
         <option value="$PROJECT_DIR$/apps/operation/adminx.py" />
         <option value="$PROJECT_DIR$/apps/users/adminx.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/org_base.html" />
         <option value="$PROJECT_DIR$/apps/courses/models.py" />
         <option value="$PROJECT_DIR$/templates/course-detail.html" />
@@ -199,11 +179,13 @@
         <option value="$PROJECT_DIR$/templates/course-video.html" />
         <option value="$PROJECT_DIR$/apps/courses/views.py" />
         <option value="$PROJECT_DIR$/MxOnline/urls.py" />
-        <option value="$PROJECT_DIR$/apps/organization/urls.py" />
         <option value="$PROJECT_DIR$/apps/organization/models.py" />
         <option value="$PROJECT_DIR$/templates/org-list.html" />
-        <option value="$PROJECT_DIR$/templates/teachers-list.html" />
+        <option value="$PROJECT_DIR$/apps/organization/urls.py" />
+        <option value="$PROJECT_DIR$/templates/teacher-detail.html" />
         <option value="$PROJECT_DIR$/apps/organization/views.py" />
+        <option value="$PROJECT_DIR$/templates/teachers-list.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -696,7 +678,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531708923981</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="完成授课讲师列表页的编写">
+      <created>1534240194575</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1534240194575</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -717,11 +706,10 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.4315961" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.3583062" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2783019" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6698113" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32736155" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61860466" weight="0.47566718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="manage.py@MxOnline" order="9" weight="0.19654088" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
       <window_info id="Structure" order="1" sideWeight="0.38139534" side_tool="true" weight="0.19288956" />
@@ -729,6 +717,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35993487" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="manage.py@MxOnline" order="9" weight="0.19654088" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -794,7 +783,8 @@
     <MESSAGE value="完成学过该课程的同学还学过哪些课程的模块的编写以及编写了验证是否登录的基础View，并把用户和课程关联起来" />
     <MESSAGE value="添加CourseCommentView的该课同学还学过的逻辑" />
     <MESSAGE value="完成课程视频播放功能的编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成课程视频播放功能的编写" />
+    <MESSAGE value="完成授课讲师列表页的编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成授课讲师列表页的编写" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -809,13 +799,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/course-play.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -904,13 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-76">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/org-detail-homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1043,20 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/org_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-894">
-          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="161" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2204">
-          <caret line="116" column="31" lean-forward="true" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/course-detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1127,59 +1089,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teacher-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="105" column="103" lean-forward="true" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="103" />
+          <folding>
+            <element signature="e#603#2407#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/organization/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="76" />
+        <state relative-caret-position="243">
+          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
           <folding>
             <element signature="e#73#113#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/org-detail-homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/org-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="111" selection-end-column="18" />
+        <state relative-caret-position="1634">
+          <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="91" selection-start-line="25" selection-start-column="91" selection-end-line="25" selection-end-column="91" />
           <folding>
-            <element signature="e#1721#3919#0#HTML" />
-            <element signature="e#3923#5203#0#HTML" />
-            <element signature="e#6688#6709#0#DjangoTemplate" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/org_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="54" column="61" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="61" />
+        <state relative-caret-position="304">
+          <caret line="83" column="13" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="83" selection-end-column="13" />
+          <folding>
+            <element signature="n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/organization/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="224" selection-start-line="224" selection-end-line="228" selection-end-column="10" />
+        <state relative-caret-position="3667">
+          <caret line="244" column="40" selection-start-line="244" selection-start-column="40" selection-end-line="244" selection-end-column="40" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/teachers-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="e#671#677#0#HTML" expanded="true" />
-            <element signature="e#677#683#0#HTML" expanded="true" />
-            <element signature="e#683#689#0#HTML" expanded="true" />
-            <element signature="e#1872#1878#0#HTML" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#section#1;n#!!top" />
-            <element signature="n#for#2;n#!!top" />
-            <element signature="n#script#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
         </state>
       </provider>
     </entry>
