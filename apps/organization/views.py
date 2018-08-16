@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from django.http import HttpResponse
+from django.db.models import Q
 
 from .models import CourseOrg,CityDict,Teacher
 from .forms import UserAskForm
@@ -23,6 +24,12 @@ class OrgView(View):
 
         # 城市
         all_citys = CityDict.objects.all()
+
+        # 机构搜索
+        search_keywords = request.GET.get('keywords', "")
+        if search_keywords:
+            # name__icontains 表示根据name字段进行搜索，并且不区分大小写
+            all_orgs = all_orgs.filter(Q(name__icontains=search_keywords) | Q(desc__icontains=search_keywords))
 
         # 取出筛选城市
         city_id = request.GET.get("city","")
@@ -201,6 +208,14 @@ class TeacherListView(View):
     """
     def get(self,request):
         all_teachers = Teacher.objects.all()
+
+        # 教师搜索
+        search_keywords = request.GET.get('keywords', "")
+        if search_keywords:
+            # name__icontains 表示根据name字段进行搜索，并且不区分大小写
+            all_teachers = all_teachers.filter(Q(name__icontains=search_keywords) |
+                                               Q(work_company__icontains=search_keywords) |
+                                               Q(work_position__icontains=search_keywords))
 
         # 排序
         sort = request.GET.get("sort", "")

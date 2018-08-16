@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic.base import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from django.http import HttpResponse
+from django.db.models import Q
 
 from .models import Course,CourseResource,Video
 from operation.models import UserFavorite,CourseComments,UserCourse
@@ -17,6 +18,13 @@ class CourseListView(View):
         all_courses = Course.objects.all().order_by("-add_time")#默认按添加时间进行倒序排列
 
         hot_courses = Course.objects.all().order_by("-click_nums")[:3]#热门推荐课程
+
+        # 课程搜索 不仅用filter，也需要应用到Q，进行多条件查询
+        # 如搜索python的课程，不仅要课程含有python，详情含有python的课程也需要查询出来
+        search_keywords = request.GET.get('keywords', "")
+        if search_keywords:
+            # name__icontains 表示根据name字段进行搜索，并且不区分大小写
+            all_courses = all_courses.filter(Q(name__icontains=search_keywords) | Q(desc__icontains=search_keywords) | Q(detail__icontains=search_keywords))
 
         # 排序
         sort = request.GET.get("sort", "")
