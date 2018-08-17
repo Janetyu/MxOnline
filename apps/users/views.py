@@ -1,13 +1,17 @@
+import json
+
 from django.shortcuts import render
 from django.contrib.auth import authenticate,login
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 from django.views.generic.base import View
 from django.contrib.auth.hashers import make_password
+from django.http import HttpResponse
 
 from .models import UserProfile,EmailVerifyRecord
-from .forms import LoginForm,RegisterForm,ForgetForm,ModifyPwdForm
+from .forms import LoginForm,RegisterForm,ForgetForm,ModifyPwdForm,UploadImageForm
 from utils.email_send import send_register_email
+from utils.mixin_utils import LoginRequiredMixin
 
 
 class CustomBackend(ModelBackend):
@@ -49,6 +53,9 @@ class ResetView(View):
 
 
 class ModifyPwdView(View):
+    """
+    修改用户密码，在登录页面
+    """
     def post(self,request):
         modify_form = ModifyPwdForm(request.POST)
         if modify_form.is_valid():
@@ -142,3 +149,55 @@ def user_login(request):
             return render(request, "login.html", {"msg":"用户名或密码错误！"})
     elif request.method == "GET":
         return render(request,"login.html",{})
+
+
+# 注意这个一个登陆才能访问的view，因此要继承LoginRequiredMixin
+class UserInfoView(LoginRequiredMixin, View):
+    """
+    用户个人信息
+    """
+    def get(self,request):
+        return render(request,"usercenter-info.html",{})
+
+
+class UploadImageView(LoginRequiredMixin,View):
+    """
+    用户修改头像
+    """
+    def post(self,request):
+        # 技巧：通过编写form，django会对上传的文件保存到内存中，然后可以从内存中取出来替换掉user的image
+        # 实例化form，文件上传与其他的form验证不一样，文件是放在request.FILES中的
+        # image_form = UploadImageForm(request.POST, request.FILES)
+        # if image_form.is_valid():
+        #     image = image_form.cleaned_data['image']
+        #     request.user.image = image
+        #     request.user.save()
+        # 通过instance=request.user使得image_form拥有form属性，也拥有UserProfile的实例
+        image_form = UploadImageForm(request.POST, request.FILES, instance=request.user)
+        if image_form.is_valid():
+            image_form.save()
+            # 返回json，是异步操作
+            return HttpResponse('{"status":"success"}', content_type='application/json')
+        else:
+            return HttpResponse('{"status":"fail"}', content_type='application/json')
+
+
+class UpdatePwdView(View):
+    """
+    在个人中心修改密码
+    """
+    def post(self,request):
+        modify_form = ModifyPwdForm(request.POST)
+        if modify_form.is_valid():
+            pwd1 = request.POST.get("password1","")
+            pwd2 = request.POST.get("password2","")
+            if pwd1 != pwd2:
+                return HttpResponse('{"status":"fail","msg":"密码不一致"}', content_type='application/json')
+            user = request.user
+            user.password = make_password(pwd2)
+            user.save()
+
+            return HttpResponse('{"status":"success"}', content_type='application/json')
+        else:
+            # 传递具体错误原因
+            return HttpResponse(json.dumps(modify_form.errors), content_type='application/json')
