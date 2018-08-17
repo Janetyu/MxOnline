@@ -90,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usercenter-info.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="usercenter-info.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/usercenter-info.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1159">
@@ -99,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
+            <state relative-caret-position="741">
               <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
             </state>
           </provider>
@@ -155,9 +155,9 @@
     <replaceStrings>
       <replace>/static/images</replace>
       <replace>{}</replace>
-      <replace />
-      <replace />
-      <replace />
+      <replace>{% static %}</replace>
+      <replace>{% static '' %}</replace>
+      <replace>{% static 'js' %}</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -763,7 +763,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534473159050</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="完成个人中心的个人信息模块的编写">
+      <created>1534487749310</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1534487749311</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView">
@@ -837,7 +844,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加html,static等静态网页资源" />
     <MESSAGE value="修改主页的相关路径和静态资源" />
     <MESSAGE value="完成登录模块的表单基本验证以及数据库验证，实现登录功能" />
     <MESSAGE value="完成了注册模块，可以进行邮箱激活" />
@@ -862,7 +868,8 @@
     <MESSAGE value="完成全局搜索功能的编写" />
     <MESSAGE value="完成个人中心页面修改密码功能的编写" />
     <MESSAGE value="完成全局登录状态的验证及页面相应显示处理的编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成全局登录状态的验证及页面相应显示处理的编写" />
+    <MESSAGE value="完成个人中心的个人信息模块的编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成个人中心的个人信息模块的编写" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1242,13 +1249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/deco-user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-641">
@@ -1287,6 +1287,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1159">
           <caret line="61" column="68" lean-forward="true" selection-start-line="61" selection-start-column="68" selection-end-line="61" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
         </state>
       </provider>
     </entry>
