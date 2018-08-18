@@ -25,9 +25,9 @@ sys.path.insert(0,os.path.join(BASE_DIR,'extra_apps'))
 SECRET_KEY = 'zm0%6=w%(bbjihg+1bx2fp-pb&=xlzak+0y7=6@odzl+l*gmkl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 AUTHENTICATION_BACKENDS = (
     'users.views.CustomBackend',
@@ -154,3 +154,5 @@ EMAIL_FROM = "wl15807599034@126.com"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+STATIC_ROOT = os.path.join(BASE_DIR,'static')

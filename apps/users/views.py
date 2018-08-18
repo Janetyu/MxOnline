@@ -363,6 +363,8 @@ class IndexView(View):
     # 幕学在线网 首页
     def get(self,request):
         # 取出轮播图
+        # 测试500页面
+        # print(1/0)
         all_banners = Banner.objects.all().order_by('index')
         courses = Course.objects.filter(is_banner=False)[:6]
         banner_courses = Course.objects.filter(is_banner=True)[:3]
@@ -374,3 +376,19 @@ class IndexView(View):
             'banner_courses':banner_courses,
             'course_orgs':course_orgs,
         })
+
+
+def page_not_found(request):
+    # 全局404页面处理函数
+    from django.shortcuts import render_to_response
+    response = render_to_response('404.html',{})
+    response.status_code = 404
+    return response
+
+
+def page_err(request):
+    # 全局500页面处理函数
+    from django.shortcuts import render_to_response
+    response = render_to_response('500.html',{})
+    response.status_code = 500
+    return response

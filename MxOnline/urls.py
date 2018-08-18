@@ -23,7 +23,7 @@ from users.views import LoginView,RegisterView,ActiveUserView,ForgetPwdView,Rese
 from users.views import IndexView
 from organization.views import OrgView
 from django.views.static import serve
-from MxOnline.settings import MEDIA_ROOT
+from MxOnline.settings import MEDIA_ROOT,STATIC_ROOT
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
@@ -49,7 +49,13 @@ urlpatterns = [
     url(r'^users/', include('users.urls', namespace='users')),
 
     # 配置上传文件的访问处理函数
-    url(r'^media/(?P<path>.*)$',serve,{"document_root":MEDIA_ROOT})
+    url(r'^media/(?P<path>.*)$',serve,{"document_root":MEDIA_ROOT}),
+
+    # 配置静态文件的访问处理函数
+    url(r'^static/(?P<path>.*)$',serve,{"document_root":STATIC_ROOT})
 ]
 
 
+# 全局404和500页面配置
+handler404 = 'users.views.page_not_found'
+handler500 = 'users.views.page_err'
