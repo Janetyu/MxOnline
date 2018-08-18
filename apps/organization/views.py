@@ -96,6 +96,9 @@ class OrgHomeView(View):
     def get(self,request,org_id):
         current_page = "home"
         course_org = CourseOrg.objects.get(id=int(org_id))
+        course_org.click_nums += 1
+        course_org.save()
+
         is_fav = False
         if request.user.is_authenticated():
             # 判断用户是否登录
