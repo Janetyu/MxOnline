@@ -12,6 +12,7 @@ class Course(models.Model):
     name = models.CharField(max_length=50,verbose_name=u"课程名")
     desc = models.CharField(max_length=300,verbose_name=u"课程描述")
     detail = models.TextField(verbose_name=u"课程详情")#暂时定义成TextField，它的特点是可以不定义长度
+    is_banner = models.BooleanField(verbose_name=u"是否轮播",default=False)
     teacher = models.ForeignKey(Teacher,verbose_name=u"讲师",null=True,blank=True)
     degree = models.CharField(verbose_name=u"难度",choices=(("cj","初级"),("zj","中级"),("gj","高级")),max_length=2)
     learn_times = models.IntegerField(default=0,verbose_name=u"学习时长(分钟数)")
