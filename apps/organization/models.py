@@ -66,3 +66,11 @@ class Teacher(models.Model):
     # 获取课程数
     def get_course_nums(self):
         return self.course_set.all().count()
+
+    # 获取该讲师的第一个课程的名称
+    def get_onecourse_name(self):
+        course_name = self.course_set.all()[0].name
+        if course_name:
+            return course_name
+        else:
+            return ''
