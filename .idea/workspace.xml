@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b6c69ecc-1d9b-4a84-85bd-12573f75fd81" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/operation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/operation/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MxOnline/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MxOnline/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/org_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/org_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/usercenter-base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/usercenter-base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/usercenter-message.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/usercenter-message.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +41,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/users/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
+            <state relative-caret-position="661">
               <caret line="38" selection-start-line="38" selection-end-line="39" selection-end-column="68" />
               <folding>
                 <element signature="e#74#114#0" expanded="true" />
@@ -56,33 +50,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usercenter-message.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/usercenter-message.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MxOnline/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="43" selection-end-column="18" />
+            <state relative-caret-position="205">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="56" />
               <folding>
-                <element signature="n#div#1;n#div#1;n#div#0;n#!!top" />
-                <element signature="n#ul#0;n#div#2;n#div#1;n#div#0;n#!!top" />
+                <element signature="e#697#737#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usercenter-base.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/usercenter-base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="50" column="93" selection-start-line="50" selection-start-column="93" selection-end-line="50" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6191">
-              <caret line="334" column="31" lean-forward="true" selection-start-line="334" selection-start-column="31" selection-end-line="334" selection-end-column="31" />
+            <state relative-caret-position="309">
+              <caret line="154" column="8" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -90,29 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/users/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="25" selection-start-line="25" selection-end-line="28" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="org_base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/org_base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+            <state relative-caret-position="348">
+              <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -215,7 +181,6 @@
         <option value="$PROJECT_DIR$/templates/course-list.html" />
         <option value="$PROJECT_DIR$/apps/courses/views.py" />
         <option value="$PROJECT_DIR$/apps/organization/views.py" />
-        <option value="$PROJECT_DIR$/MxOnline/urls.py" />
         <option value="$PROJECT_DIR$/apps/utils/email_send.py" />
         <option value="$PROJECT_DIR$/apps/users/forms.py" />
         <option value="$PROJECT_DIR$/templates/usercenter-info.html" />
@@ -227,11 +192,12 @@
         <option value="$PROJECT_DIR$/apps/users/urls.py" />
         <option value="$PROJECT_DIR$/templates/usercenter-message.html" />
         <option value="$PROJECT_DIR$/apps/operation/models.py" />
-        <option value="$PROJECT_DIR$/apps/users/views.py" />
         <option value="$PROJECT_DIR$/apps/users/models.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/org_base.html" />
         <option value="$PROJECT_DIR$/templates/usercenter-base.html" />
+        <option value="$PROJECT_DIR$/templates/org_base.html" />
+        <option value="$PROJECT_DIR$/MxOnline/urls.py" />
+        <option value="$PROJECT_DIR$/apps/users/views.py" />
       </list>
     </option>
   </component>
@@ -257,6 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,7 +256,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -782,7 +748,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534505588200</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="完成个人中心我的消息模块的编写">
+      <created>1534508135930</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1534508135930</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -807,8 +780,7 @@
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32736155" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61860466" weight="0.37362638" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32861635" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
       <window_info id="Structure" order="1" sideWeight="0.38139534" side_tool="true" weight="0.19288956" />
       <window_info id="Favorites" order="2" sideWeight="0.38139534" side_tool="true" weight="0.19288956" />
@@ -820,30 +792,31 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32861635" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61860466" visible="true" weight="0.37362638" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.4315961" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2798742" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.38139534" side_tool="true" weight="0.19288956" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61860466" visible="true" weight="0.37362638" />
       <window_info id="Structure" order="1" sideWeight="0.38139534" side_tool="true" weight="0.19288956" />
       <window_info anchor="bottom" id="manage.py@MxOnline" order="9" weight="0.19534884" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32736155" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2798742" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32736155" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3583062" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36320755" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32736155" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50075644" side_tool="true" weight="0.32861635" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info id="Favorites" order="2" sideWeight="0.38139534" side_tool="true" weight="0.19288956" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.4315961" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3583062" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -880,7 +853,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成了注册模块，可以进行邮箱激活" />
     <MESSAGE value="完成了找回密码模块" />
     <MESSAGE value="完成课程机构管理--课程列表页面，包括base.html的编写，机构列表，所在地区、所属机构条件筛选，处理分页，授课机构排名，机构排序功能" />
     <MESSAGE value="完成urls文件分散化，用户咨询功能，异步请求，modelform的使用，自定义验证手机号码" />
@@ -905,14 +877,15 @@
     <MESSAGE value="完成个人中心的个人信息模块的编写" />
     <MESSAGE value="完成我的收藏的编写" />
     <MESSAGE value="完成我的收藏剩余模块的编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成我的收藏剩余模块的编写" />
+    <MESSAGE value="完成个人中心我的消息模块的编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成个人中心我的消息模块的编写" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/apps/users/views.py</url>
-          <line>227</line>
+          <line>237</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -942,6 +915,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/org_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Envs/mxonline/Lib/site-packages/django/contrib/auth/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1043,13 +1023,6 @@
           <folding>
             <element signature="e#73#113#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MxOnline/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1189,9 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/org-detail-course.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/course-detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1234,16 +1204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="38" selection-start-line="38" selection-end-line="39" selection-end-column="68" />
-          <folding>
-            <element signature="e#74#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/org-list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1253,7 +1213,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/usercenter-message.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
+        <state relative-caret-position="608">
           <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="43" selection-end-column="18" />
           <folding>
             <element signature="n#div#1;n#div#1;n#div#0;n#!!top" />
@@ -1276,41 +1236,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6191">
-          <caret line="334" column="31" lean-forward="true" selection-start-line="334" selection-start-column="31" selection-end-line="334" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="418">
           <caret line="25" selection-start-line="25" selection-end-line="28" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/org_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/usercenter-base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="50" column="93" selection-start-line="50" selection-start-column="93" selection-end-line="50" selection-end-column="93" />
+        <state relative-caret-position="931">
+          <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/org_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MxOnline/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="56" />
+          <folding>
+            <element signature="e#697#737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="38" selection-start-line="38" selection-end-line="39" selection-end-column="68" />
+          <folding>
+            <element signature="e#74#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="154" column="8" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
