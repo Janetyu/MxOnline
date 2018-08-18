@@ -149,6 +149,26 @@ class LoginView(View):
             return render(request, "login.html", {"login_form":login_form})
 
 
+# class LoginUnsafeView(View):
+#     # 不安全的login方法
+#     def get(self, request):
+#         return render(request, "login.html", {})
+#
+#     def post(self,request):
+#         user_name = request.POST.get("username", "")
+#         pass_word = request.POST.get("password", "")
+#
+#         import pymysql
+#         conn = pymysql.connect(host="127.0.0.1",user='root',passwd='123',db='mxonline',charset='utf8')
+#         cursor = conn.cursor()
+#         sql_select = "select * from users_userprofile where email='{0}' and password='{1}'".format(user_name,pass_word)
+#
+#         result = cursor.execute(sql_select)
+#         for row in cursor.fetchall():
+#             # 查询到用户
+#             pass
+#         print('hello')
+
 class LogoutView(View):
     """
     用户登出
