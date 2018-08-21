@@ -20,10 +20,12 @@ from django.views.generic import TemplateView
 import xadmin
 
 from users.views import LoginView,RegisterView,ActiveUserView,ForgetPwdView,ResetView,ModifyPwdView,LogoutView
-from users.views import IndexView,LoginUnsafeView
+from users.views import IndexView
 from organization.views import OrgView
 from django.views.static import serve
-from MxOnline.settings import MEDIA_ROOT,STATIC_ROOT
+import DjangoUeditor
+from MxOnline.settings import MEDIA_ROOT
+# from MxOnline.settings import STATIC_ROOT
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
@@ -53,7 +55,10 @@ urlpatterns = [
     url(r'^media/(?P<path>.*)$',serve,{"document_root":MEDIA_ROOT}),
 
     # 配置静态文件的访问处理函数
-    url(r'^static/(?P<path>.*)$',serve,{"document_root":STATIC_ROOT})
+    # url(r'^static/(?P<path>.*)$',serve,{"document_root":STATIC_ROOT})
+
+    # 富文本相关url
+    # url(r'^ueditor/',include('DjangoUeditor.urls' )),
 ]
 
 
