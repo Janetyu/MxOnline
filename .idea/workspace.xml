@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6c69ecc-1d9b-4a84-85bd-12573f75fd81" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/courses/migrations/0011_auto_20180821_1927.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/courses/migrations/0012_auto_20180821_2054.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/ueditor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/ueditor/ueditor.all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/ueditor/ueditor.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MxOnline/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MxOnline/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MxOnline/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MxOnline/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/courses/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/courses/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/courses/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/organization/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/organization/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-    </list>
+    <list default="true" id="b6c69ecc-1d9b-4a84-85bd-12573f75fd81" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -860,7 +839,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534587081677</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="测试xadmin的其他功能">
+      <created>1534857798966</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1534857798966</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -874,7 +860,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32736155" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50075644" side_tool="true" weight="0.32861635" />
@@ -958,7 +943,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成课程列表页面的编写" />
     <MESSAGE value="完成课程详情页面的编写" />
     <MESSAGE value="完成课程章节页面的编写" />
     <MESSAGE value="完成课程评论页面的编写" />
@@ -983,7 +967,8 @@
     <MESSAGE value="完成首页所有图像显示及链接跳转的编写" />
     <MESSAGE value="完成400及500页面与跳转逻辑的编写" />
     <MESSAGE value="测试sql注入 不安全web登录的编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试sql注入 不安全web登录的编写" />
+    <MESSAGE value="测试xadmin的其他功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试xadmin的其他功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1232,6 +1217,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+          <folding>
+            <element signature="e#73#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
